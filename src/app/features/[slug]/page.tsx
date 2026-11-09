@@ -269,3 +269,4 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
     </div>
   );
 }
+

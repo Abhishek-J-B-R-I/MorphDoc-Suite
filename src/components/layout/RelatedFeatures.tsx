@@ -47,3 +47,4 @@ export function RelatedFeatures({ currentSlug, currentTags }: RelatedFeaturesPro
     </div>
   );
 }
+

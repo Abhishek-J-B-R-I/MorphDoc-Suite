@@ -104,3 +104,4 @@ export function FaqAccordion({ items = FAQ_ITEMS }: { items?: FaqItem[] }) {
     </div>
   );
 }
+

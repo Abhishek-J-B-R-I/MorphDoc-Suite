@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import { Zap, ShieldCheck, Check, Sparkles, Sliders } from "lucide-react";
-import { MacAppStoreButton } from "../layout/MacAppStoreButton";
 
 export function KbSimulatorWidget() {
   const [targetKb, setTargetKb] = useState<number>(50);
@@ -170,11 +169,13 @@ export function KbSimulatorWidget() {
             </div>
           </div>
 
-          {/* Download Callout */}
-          <div className="pt-2">
-            <MacAppStoreButton className="w-full" subtext={false} />
-            <p className="text-[11px] text-neutral-400 text-center mt-2">
-              Free to download • 100% On-Device & Offline
+          {/* Architecture Guarantee Callout */}
+          <div className="pt-2 p-3.5 rounded-2xl bg-white/5 border border-white/5 text-center">
+            <span className="text-xs font-semibold text-emerald-400">
+              ✓ 100% On-Device Local Processing
+            </span>
+            <p className="text-[11px] text-neutral-400 mt-1">
+              Zero cloud uploads • Sandboxed native macOS execution
             </p>
           </div>
         </div>

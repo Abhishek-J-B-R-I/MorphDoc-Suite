@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { constructMetadata } from "@/lib/seo/metadata";
-import { MacAppStoreButton } from "@/components/layout/MacAppStoreButton";
 import { MacWindowFrame } from "@/components/layout/MacWindowFrame";
 import {
   Command,
@@ -169,9 +169,15 @@ export default function HowToUsePage() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-20">
-          <h3 className="text-2xl font-bold text-white mb-4">Start mastering your documents now</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">Have questions about any workflow?</h3>
           <div className="flex justify-center">
-            <MacAppStoreButton size="large" />
+            <Link
+              href="/support"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all shadow-glow hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span>Visit Developer Support Desk</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </div>

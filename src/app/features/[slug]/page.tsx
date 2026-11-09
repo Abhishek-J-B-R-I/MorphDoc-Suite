@@ -1,9 +1,9 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { constructMetadata } from "@/lib/seo/metadata";
 import { FEATURES_DATA, FeaturePageData } from "@/content/featuresData";
-import { MacAppStoreButton } from "@/components/layout/MacAppStoreButton";
 import { MacWindowFrame } from "@/components/layout/MacWindowFrame";
 import { RelatedFeatures } from "@/components/layout/RelatedFeatures";
 import {
@@ -125,8 +125,14 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
               {feature.description}
             </p>
 
-            <div className="pt-2">
-              <MacAppStoreButton size="large" />
+            <div className="pt-2 flex flex-wrap gap-3">
+              <Link
+                href="/how-to-use"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-semibold transition-all shadow-glow hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <span>Visual How-To Guide</span>
+                <ChevronRight className="w-4 h-4" />
+              </Link>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 text-xs text-neutral-400 pt-2">

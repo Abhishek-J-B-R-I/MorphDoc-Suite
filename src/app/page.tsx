@@ -6,7 +6,6 @@ import { BenefitsMatrix } from "@/components/home/BenefitsMatrix";
 import { HowItWorksSteps } from "@/components/home/HowItWorksSteps";
 import { PrivacyNutritionSection } from "@/components/home/PrivacyNutritionSection";
 import { FaqAccordion } from "@/components/support/FaqAccordion";
-import { MacAppStoreButton } from "@/components/layout/MacAppStoreButton";
 import { FAQ_ITEMS } from "@/content/faqData";
 import { generateFaqSchema } from "@/lib/seo/schema";
 import { Sparkles, Download, ArrowRight, ShieldCheck } from "lucide-react";
@@ -90,7 +89,7 @@ export default function HomePage() {
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
             Stop Uploading Your Files to Cloud Servers. <br />
             <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-              Download MorphDoc Suits Today.
+              Experience Native macOS Utility.
             </span>
           </h2>
 
@@ -99,12 +98,24 @@ export default function HomePage() {
             and create verified 300 DPI passport photos 100% locally on your Mac.
           </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <MacAppStoreButton size="large" />
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/how-to-use"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-sm font-semibold transition-all shadow-glow hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span>View User Guides &amp; Shortcuts</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/support"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white/5 hover:bg-white/10 text-neutral-200 text-sm font-semibold border border-white/10 transition-all hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span>Contact Support Desk</span>
+            </Link>
           </div>
 
           <div className="mt-6 text-xs text-neutral-400 flex items-center justify-center gap-4">
-            <span>Free Download</span>
+            <span>100% Offline</span>
             <span>•</span>
             <span>Zero Data Collection</span>
             <span>•</span>

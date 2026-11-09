@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { constructMetadata } from "@/lib/seo/metadata";
-import { MacAppStoreButton } from "@/components/layout/MacAppStoreButton";
 import {
   ShieldCheck,
   Cpu,
@@ -117,10 +116,15 @@ export default function AboutPage() {
         {/* Bottom CTA */}
         <div className="text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Ready to experience native Mac speed?
+            Want to see how native Mac compares to web uploaders?
           </h3>
           <div className="flex justify-center">
-            <MacAppStoreButton size="large" />
+            <Link
+              href="/benefits"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all shadow-glow hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <span>See Architectural Comparison</span>
+            </Link>
           </div>
         </div>
       </div>

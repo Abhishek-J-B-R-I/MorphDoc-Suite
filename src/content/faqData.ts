@@ -9,7 +9,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "Compression",
     question: "How do I compress an image or PDF to an exact KB size (like 50 KB)?",
     answer:
-      "Open the 'Compress to KB/MB' tool, enter 50 in the Target Size box with KB selected, and click 'Optimize & Compress'. MorphDoc Suits uses proprietary rate-distortion mathematical convergence to reach your target byte boundary without blurring text. If an ultra-high-resolution image cannot mathematically hit the threshold without downscaling, enable 'Auto-Downscale Fallback'.",
+      "Open the 'Compress to KB/MB' tool, enter 50 in the Target Size box with KB selected, and click 'Optimize & Compress'. MorphDoc Suits uses smart quality optimization to reach your target byte boundary without blurring text. If an ultra-high-resolution image cannot mathematically hit the threshold without downscaling, enable 'Auto-Downscale Fallback'.",
   },
   {
     category: "Privacy",
@@ -21,7 +21,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "Privacy",
     question: "Why does MorphDoc Suits ask for permission when saving to a folder?",
     answer:
-      "MorphDoc Suits operates strictly within the official macOS App Sandbox mandated by Apple for your security. macOS prompts for folder access via standard system dialogs (NSOpenPanel / NSSavePanel) so you maintain total control over exactly which disk locations the app can touch.",
+      "MorphDoc Suits operates strictly within the official macOS App Sandbox mandated by Apple for your security. macOS prompts for folder access via standard system Open and Save dialogs so you maintain total control over exactly which disk locations the app can touch.",
   },
   {
     category: "Privacy",
@@ -45,13 +45,13 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "Passport",
     question: "Does the Passport & ID Studio create official visa and passport compliant photos?",
     answer:
-      "Yes. The Passport Studio includes official government presets for US 2×2 inch (DS-160, US Passport), UK/EU/Schengen/Australia 35×45mm, Canada 50×70mm, and India PAN/Passport. It uses on-device Apple Vision framework for crown-to-chin ratio alignment, eye-level guides, solid background fills, and multi-photo A4/4×6 printable sheets with hairline cutting guides.",
+      "Yes. The Passport Studio includes official government presets for US 2×2 inch (DS-160, US Passport), UK/EU/Schengen/Australia 35×45mm, Canada 50×70mm, and India PAN/Passport. It features intelligent on-device facial framing guides for crown-to-chin proportions, eye-level alignment, solid background fills, and multi-photo A4/4×6 printable sheets with hairline cutting guides.",
   },
   {
     category: "PDF",
     question: "How does MorphDoc Suits compress PDFs without making text blurry?",
     answer:
-      "Unlike standard web compressors that flatten entire PDF pages into low-resolution lossy images, MorphDoc Suits uses content-aware PDF stream optimization. It preserves 100% vector typography, TrueType fonts, form fields, and line art while selectively downsampling high-DPI embedded photographic streams to standard 150 or 300 DPI.",
+      "Unlike standard web compressors that flatten entire PDF pages into low-resolution lossy images, MorphDoc Suits uses smart PDF stream optimization. It preserves 100% vector typography, TrueType fonts, form fields, and line art while intelligently optimizing high-DPI embedded photographic streams to standard 150 or 300 DPI.",
   },
   {
     category: "PDF",

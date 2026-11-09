@@ -29,7 +29,7 @@ export function HowItWorksSteps() {
       title: "Instant Verified Export",
       subtitle: "Sub-Second Delivery",
       description:
-        "Preview output size and SSIM quality with the interactive split curtain. Save directly to disk, export a batch ZIP, or press ⌘C to copy back to clipboard.",
+        "Preview output file size and visual quality with the interactive split curtain. Save directly to disk, export a batch ZIP, or press ⌘C to copy back to clipboard.",
       icon: DownloadCloud,
       shortcut: "⌘C to Copy",
       screenshot: "/screenshots/compress-before.png",

@@ -27,7 +27,7 @@ export default function HomePage() {
       {/* 1. Hero Showcase with Tabbed App Window & Interactive Curtain */}
       <HeroShowcase />
 
-      {/* 2. Interactive Rate-Distortion KB & DPI Simulator */}
+      {/* 2. Interactive Target-KB Compression Preview */}
       <section className="py-16 sm:py-24 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <KbSimulatorWidget />

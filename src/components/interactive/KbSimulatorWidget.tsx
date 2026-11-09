@@ -12,9 +12,9 @@ export function KbSimulatorWidget() {
 
   const originalKb = 2450; // 2.45 MB raw
 
-  // Rate-distortion simulation calculation:
-  // Best(q, r) = Bbase * r^1.85 * exp(-3.4 * (1 - q))
-  // SSIMest(q, r) = 1.0 - 0.14 * (1 - q)^2.1 - 0.08 * (1 - r)
+  // Target size simulation calculation:
+  // Mathematical convergence for preview visualization
+  // Quality estimation model
   const simulation = useMemo(() => {
     const ratio = targetKb / originalKb;
     // Target achieved is strictly <= targetKb
@@ -24,18 +24,19 @@ export function KbSimulatorWidget() {
     // Simulated execution latency on Apple Silicon M-Series (12ms - 28ms)
     const latencyMs = Math.round(14 + (targetKb / 500) * 8);
 
-    // Structural similarity index (SSIM)
+    // Visual quality calculation
     const qFactor = Math.min(1.0, Math.max(0.72, 0.85 + (targetKb / 500) * 0.14));
-    const ssimScore = Math.min(
+    const qualityScore = Math.min(
       0.999,
       1.0 - 0.14 * Math.pow(1 - qFactor, 2.1) - 0.08 * (1 - Math.min(1, ratio * 20))
     ).toFixed(3);
+    const qualityPercent = Math.round(parseFloat(qualityScore) * 100);
 
     return {
       outputKb,
       reductionPercent,
       latencyMs,
-      ssimScore,
+      qualityPercent,
     };
   }, [targetKb]);
 
@@ -50,14 +51,13 @@ export function KbSimulatorWidget() {
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold mb-2 border border-blue-500/20">
             <Sparkles className="w-3.5 h-3.5" />
-            Live Client-Side Rate-Distortion Simulator
+            Live Target-KB Compression Preview
           </div>
           <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
             Test Exact-KB Compression in Real Time
           </h3>
           <p className="text-sm text-neutral-400 mt-1">
-            Experience MorphDoc Suits&apos; byte-target engine before installing. Zero server
-            uploads.
+            Test how MorphDoc Suits hits your exact KB file size limit while keeping photos and documents crystal clear.
           </p>
         </div>
 
@@ -191,8 +191,8 @@ export function KbSimulatorWidget() {
                 </span>
               </div>
               <div className="text-xs font-mono text-neutral-400">
-                SSIM Perceptual Score:{" "}
-                <span className="text-white font-bold">{simulation.ssimScore}</span> / 1.000
+                Visual Quality Score:{" "}
+                <span className="text-white font-bold">{simulation.qualityPercent}%</span>
               </div>
             </div>
 

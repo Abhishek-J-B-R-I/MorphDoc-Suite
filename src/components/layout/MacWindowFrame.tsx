@@ -8,7 +8,7 @@ interface MacWindowFrameProps {
 }
 
 export function MacWindowFrame({
-  title = "MorphDoc Suite — Native macOS Studio",
+  title = "MorphDoc Suits — Native macOS Studio",
   children,
   className = "",
   badge,

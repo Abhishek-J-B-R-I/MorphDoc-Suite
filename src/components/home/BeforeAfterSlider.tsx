@@ -19,7 +19,7 @@ export function BeforeAfterSlider({
   beforeLabel = "Original Source",
   afterLabel = "MorphDoc Suits Output",
   beforeSize = "2.4 MB PNG",
-  afterSize = "48.9 KB (SSIM 0.98)",
+  afterSize = "48.9 KB (98% Visual Quality)",
 }: BeforeAfterSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);

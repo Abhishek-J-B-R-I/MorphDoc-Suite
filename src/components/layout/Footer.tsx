@@ -7,9 +7,9 @@ export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#08090C] text-neutral-400 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 lg:gap-10">
           {/* Brand Column */}
-          <div className="md:col-span-2 space-y-4">
+          <div className="sm:col-span-2 md:col-span-4 lg:col-span-4 space-y-4">
             <Link href="/" className="flex items-center gap-3">
               <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-white/5 p-0.5 border border-white/10">
                 <Image
@@ -40,7 +40,7 @@ export function Footer() {
           </div>
 
           {/* Core Features Column */}
-          <div className="space-y-3">
+          <div className="sm:col-span-1 md:col-span-3 lg:col-span-3 space-y-3">
             <h3 className="text-xs font-semibold text-white uppercase tracking-wider">Features</h3>
             <ul className="space-y-2 text-xs">
               <li>
@@ -87,7 +87,7 @@ export function Footer() {
           </div>
 
           {/* Resources Column */}
-          <div className="space-y-3">
+          <div className="sm:col-span-1 md:col-span-2 lg:col-span-2 space-y-3">
             <h3 className="text-xs font-semibold text-white uppercase tracking-wider">Resources</h3>
             <ul className="space-y-2 text-xs">
               <li>
@@ -102,7 +102,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
-                  About & Architecture
+                  About MorphDoc Suits
                 </Link>
               </li>
               <li>
@@ -114,7 +114,7 @@ export function Footer() {
           </div>
 
           {/* Mandatory Apple Compliance URLs Column */}
-          <div className="space-y-3">
+          <div className="sm:col-span-2 md:col-span-3 lg:col-span-3 space-y-3">
             <h3 className="text-xs font-semibold text-white uppercase tracking-wider">
               Legal & Support
             </h3>
@@ -142,12 +142,12 @@ export function Footer() {
                   Terms of Service & EULA
                 </Link>
               </li>
-              <li>
+              <li className="pt-1">
                 <a
                   href="mailto:support@morphdocsuits.com"
-                  className="hover:text-white transition-colors text-[11px] block text-neutral-400 font-mono pt-1"
+                  className="text-xs text-blue-400 hover:text-blue-300 font-mono inline-flex items-center gap-1.5 break-all transition-colors"
                 >
-                  support@morphdocsuits.com
+                  <span>support@morphdocsuits.com</span>
                 </a>
               </li>
             </ul>

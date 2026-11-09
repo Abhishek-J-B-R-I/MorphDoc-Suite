@@ -32,7 +32,7 @@ export function BentoGrid() {
                   <Zap className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-mono px-3 py-1 rounded-full bg-white/5 text-neutral-300 border border-white/10">
-                  Suite 01 • Rate-Distortion
+                  Suite 01 • Exact KB Size
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-white tracking-tight">
@@ -40,8 +40,7 @@ export function BentoGrid() {
               </h3>
               <p className="text-sm text-neutral-400 mt-2 leading-relaxed">
                 Need a photo under exactly 50 KB for a government portal or passport form? MorphDoc
-                mathematically hits your exact byte target while preserving SSIM &gt; 0.97 perceptual
-                sharpness.
+                mathematically hits your exact byte target while preserving crystal-clear visual sharpness.
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {["20 KB Presets", "50 KB Strict", "100 KB Limits", "Dimension Lock", "EXIF Strip"].map(
@@ -95,12 +94,12 @@ export function BentoGrid() {
               </h3>
               <p className="text-sm text-neutral-400 mt-2 leading-relaxed">
                 Combine PDF documents, drag-and-drop pages to reorder, rotate individual sheets, and
-                split complex ranges (1-3, 5-8) with lossless AcroForm namespacing.
+                split complex ranges (1-3, 5-8) while keeping interactive forms and links intact.
               </p>
               <div className="space-y-2 mt-4 text-xs text-neutral-300">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  <span>Content-aware PDF size downsampling</span>
+                  <span>Smart PDF compression that keeps text 100% sharp</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
@@ -191,14 +190,14 @@ export function BentoGrid() {
                   <ScanFace className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-mono px-3 py-1 rounded-full bg-white/5 text-neutral-300 border border-white/10">
-                  Suite 04 • Apple Vision
+                  Suite 04 • Smart ID Studio
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-white tracking-tight">
                 Passport & Official ID Studio
               </h3>
               <p className="text-sm text-neutral-400 mt-2 leading-relaxed">
-                Apple Vision framework precisely aligns eye levels and crown-to-chin guidelines.
+                Smart face-framing guides help you align eye levels and crown-to-chin proportions effortlessly.
                 Generate verified 300 DPI photos for US DS-160 (2×2&quot;), UK/EU (35×45mm), Canada,
                 and Australia with multi-photo A4/4×6 printable cutting sheets.
               </p>

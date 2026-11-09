@@ -61,7 +61,7 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-bold text-white">Apple Silicon Native</h3>
             <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
-              We leverage Apple Accelerate, CoreGraphics, and the Apple Neural Engine to deliver
+              We leverage Apple Silicon and native Mac hardware acceleration to deliver
               near-instant execution. Operations that take 30 seconds on web servers finish in 18 ms
               locally.
             </p>
@@ -85,8 +85,8 @@ export default function AboutPage() {
             <h3 className="text-xl font-bold text-white">Exact-Target Precision</h3>
             <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
               No more guessing with arbitrary &quot;low / medium / high&quot; sliders. MorphDoc
-              converges mathematically on your exact byte ceiling (e.g. 50 KB max) with SSIM
-              guarantee.
+              converges mathematically on your exact byte ceiling (e.g. 50 KB max) with verified
+              crystal-clear visual quality.
             </p>
           </div>
         </div>

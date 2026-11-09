@@ -59,7 +59,7 @@ export default function BenefitsPage() {
             <p className="text-sm text-neutral-300 leading-relaxed">
               When you use a web converter, your file takes 10 to 30 seconds simply uploading across
               the network, waiting in server job queues, and downloading. MorphDoc Suits uses your
-              Mac&apos;s unified memory architecture, Apple Neural Engine, and Metal shaders to
+              Mac&apos;s unified memory architecture and native hardware acceleration to
               process images and PDFs locally in 12ms to 45ms.
             </p>
           </div>

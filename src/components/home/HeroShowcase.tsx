@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MacAppStoreButton } from "../layout/MacAppStoreButton";
 import { MacWindowFrame } from "../layout/MacWindowFrame";
 import { OsHardwareBadge } from "../interactive/OsHardwareBadge";
 import { BeforeAfterSlider } from "./BeforeAfterSlider";
@@ -18,34 +19,34 @@ export function HeroShowcase() {
       id: "slider" as TabId,
       label: "Interactive Slider",
       icon: Sparkles,
-      windowTitle: "MorphDoc Suite — Rate-Distortion Split Curtain Preview",
+      windowTitle: "MorphDoc Suits — Before & After Visual Quality Preview",
     },
     {
       id: "compress" as TabId,
       label: "Exact KB Target",
       icon: Zap,
-      windowTitle: "MorphDoc Suite — Compress to KB/MB (Target Met: 49 KB)",
+      windowTitle: "MorphDoc Suits — Compress to KB/MB (Target Met: 49 KB)",
       image: "/screenshots/hero-compress-50kb.png",
     },
     {
       id: "pdf" as TabId,
       label: "PDF Visual Grid",
       icon: Scissors,
-      windowTitle: "MorphDoc Suite — Merge & Reorder PDF Workspace",
+      windowTitle: "MorphDoc Suits — Merge & Reorder PDF Workspace",
       image: "/screenshots/pdf-merge-page-grid.png",
     },
     {
       id: "passport" as TabId,
       label: "Passport Studio",
       icon: ScanFace,
-      windowTitle: "MorphDoc Suite — Passport & ID Studio (Apple Vision 300 DPI)",
+      windowTitle: "MorphDoc Suits — Passport & ID Studio (Smart ID 300 DPI)",
       image: "/screenshots/passport-id-studio.png",
     },
     {
       id: "convert" as TabId,
       label: "Format Studio",
       icon: Repeat,
-      windowTitle: "MorphDoc Suite — 18 Offline Formats Converter",
+      windowTitle: "MorphDoc Suits — 18 Offline Formats Converter",
       image: "/screenshots/format-converter.png",
     },
   ];
@@ -83,11 +84,12 @@ export function HeroShowcase() {
           subscriptions for basic tools.
         </p>
 
-        {/* Action Button */}
-        <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4">
+        {/* Primary Download & Action Buttons */}
+        <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <MacAppStoreButton size="large" />
           <Link
             href="/how-to-use"
-            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-sm font-semibold transition-all shadow-glow hover:scale-[1.02] active:scale-[0.98]"
+            className="inline-flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/15 text-white text-sm font-semibold border border-white/15 transition-all shadow-sm hover:scale-[1.02] active:scale-[0.98]"
           >
             <span>Explore Visual Guides &amp; Shortcuts</span>
             <ArrowRight className="w-4 h-4" />

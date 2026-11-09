@@ -55,19 +55,19 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
       {
         title: "Selective Stream Compression",
         description:
-          "Downsamples embedded photographic streams to standard 150/300 DPI while leaving vector fonts and lines 100% untouched.",
+          "Optimizes embedded photographic streams to standard 150/300 DPI while leaving vector fonts and lines 100% untouched.",
         icon: "Minimize2",
       },
       {
         title: "Zero Quality Degradation",
         description:
-          "Preserves Adobe AcroForm fields, outlines, metadata, and searchable text layers without flattening into low-res bitmaps.",
+          "Preserves interactive form fields, outlines, metadata, and searchable text layers without flattening into low-res bitmaps.",
         icon: "ShieldCheck",
       },
       {
         title: "Sub-Second Performance",
         description:
-          "Harnesses Apple Silicon Accelerate and vImage frameworks to optimize a 50-page PDF document in less than 200 milliseconds.",
+          "Optimizes a 50-page PDF document in less than 200 milliseconds via native Apple Silicon processing.",
         icon: "Zap",
       },
     ],
@@ -141,8 +141,8 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
     ],
     specifications: [
       { label: "Batch Capacity", value: "Dozens of multi-page PDFs simultaneously" },
-      { label: "Structural Fidelity", value: "Lossless vector & AcroForm namespacing" },
-      { label: "Memory Footprint", value: "Zero memory leak via Apple CoreGraphics streams" },
+      { label: "Structural Fidelity", value: "Lossless vector typography & form retention" },
+      { label: "Memory Footprint", value: "Zero memory leak via native macOS streams" },
       { label: "Shortcuts", value: "Full keyboard navigation & drag gesture support" },
     ],
     howToSteps: [
@@ -166,17 +166,17 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
       { feature: "Privacy Assurance", morphDoc: "100% Sandboxed on-device", cloudWebTools: "Uploaded to third-party cloud" },
       { feature: "Visual Reordering", morphDoc: "Instant 60fps thumbnail grid", cloudWebTools: "Clunky web preview delays" },
       { feature: "Document Security", morphDoc: "Zero cloud exposure", cloudWebTools: "Risk of retention on server disks" },
-      { feature: "AcroForm Safety", morphDoc: "Automatic field collision fix", cloudWebTools: "Breaks fillable inputs" },
+      { feature: "Interactive Form Safety", morphDoc: "Keeps form fields and links intact", cloudWebTools: "Breaks fillable inputs" },
     ],
   },
 
   "compress-image-kb-mac": {
     slug: "compress-image-kb-mac",
     title: "Compress Image to Exact KB on Mac — 20KB, 50KB, 100KB Targets",
-    badge: "Rate-Distortion Algorithm",
+    badge: "Target-KB Precision",
     h1: "Compress Images to Exact KB Limits on Mac. Guaranteed.",
     description:
-      "Hit strict upload portals (government forms, visa portals, job applications) that demand files under 20 KB, 50 KB, or 100 KB. Interactive split slider with verified SSIM quality score.",
+      "Hit strict upload portals (government forms, visa portals, job applications) that demand files under 20 KB, 50 KB, or 100 KB. Interactive split slider with verified visual quality score.",
     keywords: [
       "compress image to 50KB Mac",
       "reduce photo size in KB Mac",
@@ -195,9 +195,9 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
         icon: "Target",
       },
       {
-        title: "Perceptual SSIM Guarantee",
+        title: "Verified Visual Quality",
         description:
-          "Computes Structural Similarity Index (SSIM > 0.96) in real time so your images never look pixelated or artifact-ridden.",
+          "Maintains crystal-clear visual clarity in real time so your images never look pixelated or artifact-ridden.",
         icon: "Sparkles",
       },
       {
@@ -233,7 +233,7 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
     comparisonTable: [
       { feature: "Target Accuracy", morphDoc: "Exact byte compliance (≤ 50.0 KB)", cloudWebTools: "Vague 'Low/Med/High' guesswork" },
       { feature: "EXIF Scrubbing", morphDoc: "Instant GPS & camera removal", cloudWebTools: "Often leaves sensitive metadata" },
-      { feature: "Verification", morphDoc: "Real-time SSIM quality readout", cloudWebTools: "No quality verification" },
+      { feature: "Verification", morphDoc: "Real-time visual quality readout", cloudWebTools: "No quality verification" },
       { feature: "Confidentiality", morphDoc: "Photos never leave your device", cloudWebTools: "Uploaded to unknown servers" },
     ],
   },
@@ -276,7 +276,7 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
       },
     ],
     specifications: [
-      { label: "Hardware Acceleration", value: "Apple Silicon ANE & GPU Media Engine" },
+      { label: "Hardware Acceleration", value: "Native Apple Silicon & Intel Media Engine" },
       { label: "Max Batch Queue", value: "Unlimited files per batch" },
       { label: "Color Depth", value: "8-bit, 10-bit, 12-bit & 16-bit wide color gamut" },
       { label: "Menu Bar Quick-Drop", value: "Convert files without opening the main window" },
@@ -308,11 +308,11 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
 
   "passport-photo-maker-mac": {
     slug: "passport-photo-maker-mac",
-    title: "Mac Passport & ID Photo Maker — 300 DPI Apple Vision Studio",
-    badge: "Apple Vision Framework",
+    title: "Mac Passport & ID Photo Maker — 300 DPI Smart Studio",
+    badge: "Smart ID Studio",
     h1: "Create Verified 300 DPI Passport & Visa Photos on Your Mac.",
     description:
-      "Craft government-compliant passport photos for the US, UK, Canada, Australia, Schengen, and India. Features Apple Vision facial framing, solid background replacement, and A4/4×6 printable sheets.",
+      "Craft government-compliant passport photos for the US, UK, Canada, Australia, Schengen, and India. Features smart face framing, solid background replacement, and A4/4×6 printable sheets.",
     keywords: [
       "passport photo maker Mac",
       "2x2 inch photo resizer Mac",
@@ -325,7 +325,7 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
     secondaryScreenshot: "/screenshots/passport-printable-sheet.png",
     highlights: [
       {
-        title: "Apple Vision Face Framing",
+        title: "Smart Face-Framing Guides",
         description:
           "Automatically detects eye-level coordinates and crown-to-chin margins for strict government compliance.",
         icon: "ScanFace",
@@ -367,8 +367,8 @@ export const FEATURES_DATA: Record<string, FeaturePageData> = {
       },
     ],
     comparisonTable: [
-      { feature: "Biometric Privacy", morphDoc: "100% on-device Apple Vision", cloudWebTools: "Faces stored on cloud databases" },
-      { feature: "Print Resolution", morphDoc: "Verified 300 DPI embedded", cloudWebTools: " अक्सर 72 or 96 DPI web exports" },
+      { feature: "Biometric Privacy", morphDoc: "100% on-device local processing", cloudWebTools: "Faces stored on cloud databases" },
+      { feature: "Print Resolution", morphDoc: "Verified 300 DPI embedded", cloudWebTools: "Often 72 or 96 DPI web exports" },
       { feature: "Cost per Passport", morphDoc: "Free / 0$ per export", cloudWebTools: "$15–$25 per submission" },
       { feature: "Tiled Print Sheets", morphDoc: "Included with cut guides", cloudWebTools: "Requires extra paid upsells" },
     ],
@@ -393,7 +393,7 @@ export const ALL_PAGE_TARGETS = [
   {
     slug: "compress-image-kb-mac",
     title: "Compress Image to Exact KB",
-    shortDescription: "Hit 20KB, 50KB, or 100KB limits with SSIM quality guarantee.",
+    shortDescription: "Hit 20KB, 50KB, or 100KB limits with crystal-clear visual quality.",
     tags: ["compression" as const, "image" as const, "dpi" as const],
     href: "/features/compress-image-kb-mac",
   },
@@ -407,7 +407,7 @@ export const ALL_PAGE_TARGETS = [
   {
     slug: "passport-photo-maker-mac",
     title: "Passport & ID Photo Maker",
-    shortDescription: "Verified 300 DPI photos with Apple Vision framing & printable sheets.",
+    shortDescription: "Verified 300 DPI photos with smart framing & printable sheets.",
     tags: ["passport" as const, "image" as const, "dpi" as const],
     href: "/features/passport-photo-maker-mac",
   },

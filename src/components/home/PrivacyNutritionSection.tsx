@@ -26,7 +26,7 @@ export function PrivacyNutritionSection() {
               <p className="text-base text-neutral-300 leading-relaxed">
                 When you process tax returns, confidential legal agreements, medical PDFs, or
                 family passport photos, sending them across the public web is an unnecessary risk.
-                MorphDoc Suits is engineered with a strict on-device architectural boundary.
+                MorphDoc Suits is built with a strict 100% on-device privacy guarantee.
               </p>
 
               {/* 4 Pillars of Zero-Data Architecture */}
@@ -37,7 +37,7 @@ export function PrivacyNutritionSection() {
                     <span>0 Cloud Servers</span>
                   </div>
                   <p className="text-xs text-neutral-400">
-                    No upload endpoints, no remote processing queues, no server disks.
+                    Your files never touch the internet or any external cloud servers.
                   </p>
                 </div>
 
@@ -47,7 +47,7 @@ export function PrivacyNutritionSection() {
                     <span>Zero Biometric Storage</span>
                   </div>
                   <p className="text-xs text-neutral-400">
-                    Apple Vision framework aligns facial guides in RAM. No face data is saved.
+                    Facial alignment happens locally on your Mac. No face data is ever saved or shared.
                   </p>
                 </div>
 

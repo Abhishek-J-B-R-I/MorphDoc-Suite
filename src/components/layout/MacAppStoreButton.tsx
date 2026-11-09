@@ -21,10 +21,10 @@ export function MacAppStoreButton({
         href={appStoreUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-black text-xs font-semibold hover:bg-neutral-200 transition-all shadow-sm hover:scale-[1.02] active:scale-[0.98] ${className}`}
+        className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black text-xs font-semibold hover:bg-neutral-200 transition-all shadow-md hover:scale-[1.02] active:scale-[0.98] ${className}`}
       >
         <AppleIcon className="w-3.5 h-3.5 fill-current" />
-        <span>Get on Mac App Store</span>
+        <span>Download on the Mac App Store</span>
       </Link>
     );
   }

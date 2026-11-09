@@ -153,7 +153,7 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
 
           {/* Hero Screenshot in Mac Window Frame */}
           <div className="lg:col-span-6">
-            <MacWindowFrame title={`MorphDoc Suite — ${feature.badge}`}>
+            <MacWindowFrame title={`MorphDoc Suits — ${feature.badge}`}>
               <div className="relative aspect-[16/10] w-full">
                 <Image
                   src={feature.heroScreenshot}
@@ -188,7 +188,7 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-20">
           {feature.secondaryScreenshot && (
             <div className="lg:col-span-6 order-2 lg:order-1">
-              <MacWindowFrame title={`MorphDoc Suite — Secondary Inspector`}>
+              <MacWindowFrame title={`MorphDoc Suits — Secondary Inspector`}>
                 <div className="relative aspect-[16/10] w-full">
                   <Image
                     src={feature.secondaryScreenshot}

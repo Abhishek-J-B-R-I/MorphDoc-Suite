@@ -37,7 +37,7 @@ export default function HowToUsePage() {
         "Drag your image (PNG/JPEG/HEIC) or PDF into the 'Compress to KB/MB' workspace or press ⌘V.",
         "In the Target Size panel, click '50 KB' or type your custom required byte ceiling.",
         "Verify that 'Lock Dimensions' is enabled. If the original image is ultra-high-res and mathematically cannot fit into 50 KB, enable 'Auto-Downscale Fallback'.",
-        "Click 'Optimize & Compress'. The interactive split curtain immediately lets you compare perceptual quality (SSIM > 0.97).",
+        "Click 'Optimize & Compress'. The interactive split curtain immediately lets you compare perceptual quality (98% Visual Quality).",
         "Click 'Export Verified File' or press ⌘C to copy directly back to your clipboard.",
       ],
     },
@@ -59,7 +59,7 @@ export default function HowToUsePage() {
       steps: [
         "Open 'Passport & ID Studio' and drop a front-facing portrait or selfie.",
         "Select your government preset: US 2×2\" (DS-160), UK/EU 35×45mm, Canada 50×70mm, or India Passport.",
-        "Apple Vision will automatically overlay crown-to-chin alignment margins and eye-level lines.",
+        "Smart framing guides will automatically overlay crown-to-chin alignment margins and eye-level lines.",
         "Switch to the 'Print Sheet' tab, choose A4 or 4×6\" paper, and select from 2 to 26 tiled copies.",
         "Export your 300 DPI high-print sheet with precision hairline cutting guides ready for your printer.",
       ],
@@ -67,7 +67,7 @@ export default function HowToUsePage() {
   ];
 
   const shortcuts = [
-    { key: "⌘ O", action: "Open File Picker (NSOpenPanel)" },
+    { key: "⌘ O", action: "Open File Picker" },
     { key: "⌘ V", action: "Paste Image / Screenshot from Clipboard" },
     { key: "⌘ C", action: "Copy Processed Image / OCR Text" },
     { key: "⌘ S", action: "Save Output Directly to Disk" },

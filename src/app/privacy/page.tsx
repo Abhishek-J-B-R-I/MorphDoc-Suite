@@ -49,7 +49,7 @@ export default function PrivacyPage() {
               <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
               <span>
                 <strong>Zero Biometric Storage:</strong> Facial landmark alignment runs strictly in
-                volatile memory via Apple Vision framework.
+                volatile memory using on-device vision processing.
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -91,7 +91,7 @@ export default function PrivacyPage() {
               <li>
                 <strong>Zero Biometric Storage:</strong> When using the Passport &amp; ID Studio,
                 facial landmark alignment and background segmentation run entirely on your device
-                using Apple&apos;s built-in Vision framework. No facial geometry or biometric
+                using on-device vision processing. No facial geometry or biometric
                 identifiers are ever stored, shared, or transmitted externally.
               </li>
               <li>
@@ -108,7 +108,7 @@ export default function PrivacyPage() {
             <p>
               MorphDoc Suits operates strictly within the official macOS App Sandbox. The App can
               only read or write files that you explicitly select via the macOS system file picker
-              (NSOpenPanel / NSSavePanel), drag-and-drop into the App window or Menu Bar icon, or
+              (standard macOS Open and Save dialogs), drag-and-drop into the App window or Menu Bar icon, or
               paste from your clipboard. Temporary working buffers created during processing are
               stored inside your Mac&apos;s local sandboxed temporary directory and are automatically
               purged upon task completion or app closure.

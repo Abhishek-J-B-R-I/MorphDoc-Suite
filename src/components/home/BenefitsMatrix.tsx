@@ -14,7 +14,7 @@ export function BenefitsMatrix() {
     {
       feature: "Processing Speed",
       icon: Zap,
-      morphDoc: "12ms – 45ms instant local execution via Apple Silicon Metal & ANE.",
+      morphDoc: "12ms – 45ms instant local processing optimized for Apple Silicon & Intel Macs.",
       morphDocGood: true,
       cloudTools: "30s – 90s delays waiting for uploads, server queues, and downloads.",
       cloudGood: false,
@@ -58,7 +58,7 @@ export function BenefitsMatrix() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold mb-3 border border-blue-500/20">
-            <span>The Architectural Advantage</span>
+            <span>The Native Mac Advantage</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
             Why Native Mac Beats Online Cloud Tools

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 40" width="156" height="40">
+  <rect width="156" height="40" rx="8" fill="#000000" stroke="#4B5563" stroke-width="1"/>
+  <!-- Apple Logo -->
+  <path fill="#FFFFFF" d="M28.46 22.1c-.03-2.9 2.37-4.3 2.48-4.37-1.36-1.98-3.48-2.25-4.22-2.28-1.79-.19-3.53 1.07-4.44 1.07-.93 0-2.35-1.04-3.85-1.01-1.97.03-3.8 1.16-4.81 2.94-2.07 3.58-.53 8.87 1.47 11.77.99 1.41 2.15 2.99 3.68 2.93 1.48-.06 2.04-.95 3.83-.95 1.77 0 2.29.95 3.83.92 1.58-.03 2.59-1.44 3.55-2.85 1.13-1.63 1.59-3.22 1.62-3.3-.04-.02-3.1-1.19-3.14-4.87zM25.7 13.9c.81-.98 1.35-2.34 1.2-3.7-.1.01-2.61.16-3.48 1.18-.76.88-1.42 2.29-1.24 3.65 1.27.1 2.71-.15 3.52-1.13z"/>
+  <!-- Text: Download on the -->
+  <text x="44" y="16" fill="#D1D5DB" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="8.5" letter-spacing="0.2">Download on the</text>
+  <!-- Text: Mac App Store -->
+  <text x="44" y="29" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-weight="600" font-size="14" letter-spacing="-0.3">Mac App Store</text>
+</svg>
+

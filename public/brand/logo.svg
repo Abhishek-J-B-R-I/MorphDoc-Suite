@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Document 1 (Top Left) -->
+  <path d="M28 20 C28 17.8 29.8 16 32 16 L48 16 C49.1 16 50.1 16.4 50.8 17.2 L58.8 25.2 C59.6 25.9 60 26.9 60 28 L60 48 C60 50.2 58.2 52 56 52 L52 52 C52 50 52 46 52 44 L52 28 L46 28 C44.9 28 44 27.1 44 26 L44 20 L32 20 L32 44 C32 46.2 30.2 48 28 48 C25.8 48 24 46.2 24 44 L24 24 C24 21.8 25.8 20 28 20 Z" fill="#0052FF"/>
+  <!-- Top Folded Corner triangle -->
+  <path d="M46 17 L59 30 L46 30 Z" fill="#003EC4"/>
+  
+  <!-- Interlocking Diagonal Link 1 (Top Left to Bottom Right) -->
+  <rect x="22" y="38" width="56" height="18" rx="9" transform="rotate(45 50 50)" stroke="#0052FF" stroke-width="7" fill="none"/>
+  
+  <!-- Interlocking Diagonal Link 2 (Secondary accent / connection) -->
+  <rect x="22" y="44" width="56" height="18" rx="9" transform="rotate(45 50 50)" stroke="#0066FF" stroke-width="3" stroke-dasharray="20 10" fill="none" opacity="0.3"/>
+  
+  <!-- Document 2 (Bottom Right) -->
+  <path d="M72 80 C72 82.2 70.2 84 68 84 L52 84 C50.9 84 49.9 83.6 49.2 82.8 L41.2 74.8 C40.4 74.1 40 73.1 40 72 L40 52 C40 49.8 41.8 48 44 48 L48 48 C48 50 48 54 48 56 L48 72 L54 72 C55.1 72 56 72.9 56 74 L56 80 L68 80 L68 56 C68 53.8 69.8 52 72 52 C74.2 52 76 53.8 76 56 L76 76 C76 78.2 74.2 80 72 80 Z" fill="#0052FF"/>
+  <!-- Bottom Folded Corner triangle -->
+  <path d="M54 83 L41 70 L54 70 Z" fill="#003EC4"/>
+</svg>
+

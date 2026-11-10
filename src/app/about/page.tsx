@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { constructMetadata } from "@/lib/seo/metadata";
+import { assetPath } from "@/lib/assets";
 import {
   ShieldCheck,
   Cpu,
@@ -43,7 +44,7 @@ export default function AboutPage() {
         <div className="flex justify-center mb-16">
           <div className="relative w-28 h-28 rounded-3xl overflow-hidden p-2 bg-gradient-to-br from-white/10 to-white/5 border border-white/20 shadow-glow">
             <Image
-              src="/brand/app-icon-512.png"
+              src={assetPath("/brand/app-icon-512.png")}
               alt="MorphDoc Suits Icon"
               width={112}
               height={112}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { constructMetadata } from "@/lib/seo/metadata";
 import { MacWindowFrame } from "@/components/layout/MacWindowFrame";
+import { assetPath } from "@/lib/assets";
 import {
   Command,
   Zap,
@@ -152,7 +153,7 @@ export default function HowToUsePage() {
                     <MacWindowFrame title={tut.title}>
                       <div className="relative aspect-[16/10] w-full">
                         <Image
-                          src={tut.screenshot}
+                          src={assetPath(tut.screenshot)}
                           alt={tut.title}
                           fill
                           sizes="(max-width: 1024px) 100vw, 600px"

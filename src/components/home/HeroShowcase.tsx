@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MacWindowFrame } from "../layout/MacWindowFrame";
+import { assetPath } from "@/lib/assets";
 import { OsHardwareBadge } from "../interactive/OsHardwareBadge";
 import { BeforeAfterSlider } from "./BeforeAfterSlider";
 import { Zap, ShieldCheck, Check, Sparkles, Layers, Scissors, ScanFace, Repeat, ArrowRight } from "lucide-react";
@@ -151,7 +152,7 @@ export function HeroShowcase() {
                 <div className="relative aspect-[16/10] w-full">
                   {currentTab.image && (
                     <Image
-                      src={currentTab.image}
+                      src={assetPath(currentTab.image)}
                       alt={currentTab.windowTitle}
                       fill
                       sizes="(max-width: 1200px) 100vw, 1200px"

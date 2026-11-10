@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, Mail, Cpu, CheckCircle } from "lucide-react";
+import { assetPath } from "@/lib/assets";
 
 export function Footer() {
   return (
@@ -13,7 +14,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3">
               <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-white/5 p-0.5 border border-white/10">
                 <Image
-                  src="/brand/app-icon-512.png"
+                  src={assetPath("/brand/app-icon-512.png")}
                   alt="MorphDoc Suits Logo"
                   width={32}
                   height={32}

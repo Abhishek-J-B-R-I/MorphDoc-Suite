@@ -6,6 +6,7 @@ import { constructMetadata } from "@/lib/seo/metadata";
 import { FEATURES_DATA, FeaturePageData } from "@/content/featuresData";
 import { MacWindowFrame } from "@/components/layout/MacWindowFrame";
 import { RelatedFeatures } from "@/components/layout/RelatedFeatures";
+import { assetPath } from "@/lib/assets";
 import {
   ShieldCheck,
   Check,
@@ -156,7 +157,7 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
             <MacWindowFrame title={`MorphDoc Suits — ${feature.badge}`}>
               <div className="relative aspect-[16/10] w-full">
                 <Image
-                  src={feature.heroScreenshot}
+                  src={assetPath(feature.heroScreenshot)}
                   alt={feature.h1}
                   fill
                   sizes="(max-width: 1024px) 100vw, 600px"
@@ -191,7 +192,7 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
               <MacWindowFrame title={`MorphDoc Suits — Secondary Inspector`}>
                 <div className="relative aspect-[16/10] w-full">
                   <Image
-                    src={feature.secondaryScreenshot}
+                    src={assetPath(feature.secondaryScreenshot)}
                     alt={feature.title}
                     fill
                     sizes="(max-width: 1024px) 100vw, 600px"

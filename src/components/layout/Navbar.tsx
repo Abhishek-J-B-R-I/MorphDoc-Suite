@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Menu, X, ShieldCheck, Zap, Scissors, Repeat, ScanFace } from "lucide-react";
+import { assetPath } from "@/lib/assets";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +31,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-white/5 p-1 border border-white/10 group-hover:border-blue-500/50 transition-colors shadow-sm">
               <Image
-                src="/brand/app-icon-512.png"
+                src={assetPath("/brand/app-icon-512.png")}
                 alt="MorphDoc Suits Logo"
                 width={36}
                 height={36}

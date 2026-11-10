@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import { Zap, ShieldCheck, Check, Sparkles, Sliders } from "lucide-react";
+import { assetPath } from "@/lib/assets";
 
 export function KbSimulatorWidget() {
   const [targetKb, setTargetKb] = useState<number>(50);
@@ -225,7 +226,7 @@ export function KbSimulatorWidget() {
             {/* Embedded Actual App Screenshot Window */}
             <div className="relative rounded-xl overflow-hidden border border-white/10 mt-3 group">
               <Image
-                src="/screenshots/hero-compress-50kb.png"
+                src={assetPath("/screenshots/hero-compress-50kb.png")}
                 alt="MorphDoc Suits Actual Compression Screen"
                 width={1280}
                 height={800}

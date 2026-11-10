@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Zap, Scissors, ScanFace, Sliders, ChevronRight, CheckCircle2 } from "lucide-react";
+import { assetPath } from "@/lib/assets";
 
 export function BentoGrid() {
   return (
@@ -59,7 +60,7 @@ export function BentoGrid() {
             {/* Embedded Screenshot */}
             <div className="mt-6 -mb-4 -mr-4 sm:-mb-6 sm:-mr-6 relative rounded-tl-2xl overflow-hidden border-t border-l border-white/10 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
               <Image
-                src="/screenshots/hero-compress-50kb.png"
+                src={assetPath("/screenshots/hero-compress-50kb.png")}
                 alt="Target KB Compressor in MorphDoc Suits"
                 width={1200}
                 height={750}
@@ -111,7 +112,7 @@ export function BentoGrid() {
             {/* Embedded Screenshot */}
             <div className="mt-6 -mb-4 -mr-4 relative rounded-tl-2xl overflow-hidden border-t border-l border-white/10 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
               <Image
-                src="/screenshots/pdf-merge-page-grid.png"
+                src={assetPath("/screenshots/pdf-merge-page-grid.png")}
                 alt="Visual PDF Page Grid in MorphDoc Suits"
                 width={800}
                 height={500}
@@ -163,7 +164,7 @@ export function BentoGrid() {
             {/* Embedded Screenshot */}
             <div className="mt-6 -mb-4 -mr-4 relative rounded-tl-2xl overflow-hidden border-t border-l border-white/10 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
               <Image
-                src="/screenshots/resize-dpi-inspector.png"
+                src={assetPath("/screenshots/resize-dpi-inspector.png")}
                 alt="Resize and DPI Studio in MorphDoc Suits"
                 width={800}
                 height={500}
@@ -224,7 +225,7 @@ export function BentoGrid() {
             {/* Embedded Screenshot */}
             <div className="mt-6 -mb-4 -mr-4 sm:-mb-6 sm:-mr-6 relative rounded-tl-2xl overflow-hidden border-t border-l border-white/10 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
               <Image
-                src="/screenshots/passport-printable-sheet.png"
+                src={assetPath("/screenshots/passport-printable-sheet.png")}
                 alt="Passport Printable Sheet in MorphDoc Suits"
                 width={1200}
                 height={750}

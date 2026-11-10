@@ -3,6 +3,7 @@
 import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { Sparkles, ArrowLeftRight } from "lucide-react";
+import { assetPath } from "@/lib/assets";
 
 interface BeforeAfterSliderProps {
   beforeImage?: string;
@@ -79,7 +80,7 @@ export function BeforeAfterSlider({
         {/* Background Layer: After (MorphDoc Output) */}
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src={afterImage}
+            src={assetPath(afterImage)}
             alt="MorphDoc Suits Compressed Output"
             fill
             sizes="(max-width: 1200px) 100vw, 1200px"
@@ -97,7 +98,7 @@ export function BeforeAfterSlider({
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <Image
-            src={beforeImage}
+            src={assetPath(beforeImage)}
             alt="Original High-Res File"
             fill
             sizes="(max-width: 1200px) 100vw, 1200px"

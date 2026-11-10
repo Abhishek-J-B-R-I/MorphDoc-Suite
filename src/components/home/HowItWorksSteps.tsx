@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { MousePointerClick, SlidersHorizontal, HardDrive, Command } from "lucide-react";
+import { assetPath } from "@/lib/assets";
 
 export function HowItWorksSteps() {
   const steps = [
@@ -90,7 +91,7 @@ export function HowItWorksSteps() {
                 {/* Screenshot preview */}
                 <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden border border-white/10 shadow-lg mt-auto">
                   <Image
-                    src={item.screenshot}
+                    src={assetPath(item.screenshot)}
                     alt={item.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"

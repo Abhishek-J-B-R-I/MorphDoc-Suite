@@ -39,7 +39,7 @@ jobs:
       - name: Build Static Export with Next.js
         run: npx next build
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_BASE_PATH: /MorphDoc-Suite
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

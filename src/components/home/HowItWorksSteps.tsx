@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { MousePointerClick, SlidersHorizontal, DownloadCloud, Command } from "lucide-react";
+import { MousePointerClick, SlidersHorizontal, HardDrive, Command } from "lucide-react";
 
 export function HowItWorksSteps() {
   const steps = [
@@ -30,7 +30,7 @@ export function HowItWorksSteps() {
       subtitle: "Sub-Second Delivery",
       description:
         "Preview output file size and visual quality with the interactive split curtain. Save directly to disk, export a batch ZIP, or press ⌘C to copy back to clipboard.",
-      icon: DownloadCloud,
+      icon: HardDrive,
       shortcut: "⌘C to Copy",
       screenshot: "/screenshots/compress-before.png",
     },

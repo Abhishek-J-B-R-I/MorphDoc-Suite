@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MacAppStoreButton } from "../layout/MacAppStoreButton";
 import { MacWindowFrame } from "../layout/MacWindowFrame";
 import { OsHardwareBadge } from "../interactive/OsHardwareBadge";
 import { BeforeAfterSlider } from "./BeforeAfterSlider";
@@ -84,12 +83,11 @@ export function HeroShowcase() {
           subscriptions for basic tools.
         </p>
 
-        {/* Primary Download & Action Buttons */}
-        <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <MacAppStoreButton size="large" />
+        {/* Action Button */}
+        <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4">
           <Link
             href="/how-to-use"
-            className="inline-flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/15 text-white text-sm font-semibold border border-white/15 transition-all shadow-sm hover:scale-[1.02] active:scale-[0.98]"
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-sm font-semibold transition-all shadow-glow hover:scale-[1.02] active:scale-[0.98]"
           >
             <span>Explore Visual Guides &amp; Shortcuts</span>
             <ArrowRight className="w-4 h-4" />

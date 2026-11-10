@@ -8,7 +8,7 @@ import { PrivacyNutritionSection } from "@/components/home/PrivacyNutritionSecti
 import { FaqAccordion } from "@/components/support/FaqAccordion";
 import { FAQ_ITEMS } from "@/content/faqData";
 import { generateFaqSchema } from "@/lib/seo/schema";
-import { Sparkles, Download, ArrowRight, ShieldCheck } from "lucide-react";
+import { Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function HomePage() {

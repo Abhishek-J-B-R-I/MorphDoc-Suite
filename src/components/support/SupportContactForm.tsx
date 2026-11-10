@@ -160,7 +160,7 @@ export function SupportContactForm() {
         >
           <option value="Bug Report">Bug Report & Diagnostic</option>
           <option value="Feature Request">Feature Request / Enhancement</option>
-          <option value="App Store & Billing">Apple App Store & Download Help</option>
+          <option value="App Store & Billing">Apple App Store &amp; License Help</option>
           <option value="How-To / Help">How-To & Technical Assistance</option>
         </select>
       </div>

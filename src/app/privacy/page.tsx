@@ -141,10 +141,10 @@ export default function PrivacyPage() {
               </a>{" "}
               or email us directly at:{" "}
               <a
-                href="mailto:support@morphdocsuits.com"
+                href="mailto:wesupportyou8@gmail.com"
                 className="text-blue-400 hover:text-blue-300 underline font-mono"
               >
-                support@morphdocsuits.com
+                wesupportyou8@gmail.com
               </a>
               .
             </p>

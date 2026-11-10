@@ -95,10 +95,10 @@ export default function SupportPage() {
                     <Mail className="w-3.5 h-3.5 text-blue-400" /> Direct Support Email:
                   </span>
                   <a
-                    href="mailto:support@morphdocsuits.com"
+                    href="mailto:wesupportyou8@gmail.com"
                     className="font-mono text-blue-400 hover:underline"
                   >
-                    support@morphdocsuits.com
+                    wesupportyou8@gmail.com
                   </a>
                 </div>
 

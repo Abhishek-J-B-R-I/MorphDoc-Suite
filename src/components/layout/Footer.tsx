@@ -145,10 +145,10 @@ export function Footer() {
               </li>
               <li className="pt-1">
                 <a
-                  href="mailto:support@morphdocsuits.com"
+                  href="mailto:wesupportyou8@gmail.com"
                   className="text-xs text-blue-400 hover:text-blue-300 font-mono inline-flex items-center gap-1.5 break-all transition-colors"
                 >
-                  <span>support@morphdocsuits.com</span>
+                  <span>wesupportyou8@gmail.com</span>
                 </a>
               </li>
             </ul>

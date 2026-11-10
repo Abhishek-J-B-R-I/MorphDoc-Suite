@@ -113,10 +113,10 @@ export default function TermsPage() {
             <p>
               If you have any questions or require support regarding these Terms, please reach us at:{" "}
               <a
-                href="mailto:support@morphdocsuits.com"
+                href="mailto:wesupportyou8@gmail.com"
                 className="text-blue-400 hover:text-blue-300 underline font-mono"
               >
-                support@morphdocsuits.com
+                wesupportyou8@gmail.com
               </a>
               .
             </p>

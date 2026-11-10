@@ -39,7 +39,7 @@ export function SupportContactForm() {
       const generatedTicket = `MDS-${Math.floor(100000 + Math.random() * 900000)}`;
       setTicketId(generatedTicket);
     } catch {
-      setErrorMsg("Failed to submit inquiry. Please email support@morphdocsuits.com directly.");
+      setErrorMsg("Failed to submit inquiry. Please email wesupportyou8@gmail.com directly.");
     } finally {
       setLoading(false);
     }
@@ -183,7 +183,7 @@ export function SupportContactForm() {
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
         <div className="flex items-center gap-1.5 text-[11px] text-neutral-400">
           <ShieldAlert className="w-3.5 h-3.5 text-neutral-400" />
-          <span>Direct delivery to support@morphdocsuits.com</span>
+          <span>Direct delivery to wesupportyou8@gmail.com</span>
         </div>
 
         <button
